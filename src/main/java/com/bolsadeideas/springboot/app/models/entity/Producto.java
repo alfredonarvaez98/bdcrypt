@@ -1,5 +1,7 @@
 package com.bolsadeideas.springboot.app.models.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -15,6 +17,7 @@ import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "productos")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Producto implements Serializable {
 
 	@Id
