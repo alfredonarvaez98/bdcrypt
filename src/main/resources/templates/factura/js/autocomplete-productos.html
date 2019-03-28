@@ -5,6 +5,23 @@
 	<script type="text/javascript" th:fragment="javascript">
 		$(document).ready(function() {
 
+
+
+			$('#alfredo').on('mouseenter',function(){
+				$.ajax({
+					url:'tooltip.html',
+					data:{id:this.id},
+					success:function(response)
+					{
+
+					}
+				});
+			});
+
+
+
+
+
 			$("#buscar_producto").autocomplete({
 
 				source : function(request, response) {
