@@ -21,7 +21,7 @@ import java.util.Locale;
 
 @Configuration
 public class MvcConfig implements WebMvcConfigurer {
-
+//prueba
 	/*private final Logger log = LoggerFactory.getLogger(getClass());
 	
 	@Override
